@@ -37,3 +37,13 @@ then
 else
    echo "Invalid phone number"
 fi
+
+
+read -p "Enter valid password : " password
+pattern5="[a-zA-Z1-9]{8,}$"
+if [[ $password =~ $pattern5 ]]
+then
+   echo "Valid password"
+else
+   echo "Invalid password"
+fi
