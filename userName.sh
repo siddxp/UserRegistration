@@ -27,3 +27,13 @@ then
 else
 	echo "Invalid Email id"
 fi
+
+
+read -p "Enter valid phone number : " phoneNumber
+pattern4="[1-9]{2} [1-9]{1}[0-9]{9}"
+if [[ $phoneNumber =~ $pattern4 ]]
+then
+   echo "Valid phone number"
+else
+   echo "Invalid phone number"
+fi
