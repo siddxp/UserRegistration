@@ -40,6 +40,7 @@ fi
 
 
 read -p "Enter valid password : " password
+
 digit="[0-9]+"
 upperCase="[A-Z]{1,}"
 specialChar="[@#%^-*+/]{1}"
@@ -49,3 +50,5 @@ then
 else
    echo "Invalid password"
 fi
+
+#email validations done
