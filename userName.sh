@@ -40,9 +40,9 @@ fi
 
 
 read -p "Enter valid password : " password
-digit="[0-9]"
+digit="[0-9]+"
 upperCase="[A-Z]{1,}"
-if [[ ${#password} -ge 8 ]] && [[ "$password"==[[:lower:]]+ ]] && [[ $password=~$upperCase ]]
+if [[ ${#password} -ge 8 ]] && [[ "$password"==[[:lower:]]+ ]] && [[ $password =~ $upperCase ]] && [[ $password =~ $digit ]]
 then
    echo "Valid password"
 else
